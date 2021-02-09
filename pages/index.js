@@ -2,11 +2,13 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 
+
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>2.0 Aloha Tech Software</title>
+        <title>2.1 Aloha Tech Software</title>
         
         <link rel="icon" href="/favicon.ico" />
       </Head>

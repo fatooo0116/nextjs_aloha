@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <h2>2.0 Aloha Tech Software</h2>
+          <h2>2.99 Aloha Tech Software</h2>
       </main>
 
       <footer className={styles.footer}>

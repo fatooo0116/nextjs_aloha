@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Aloha Tech Software</title>
+        <title>2.0 Aloha Tech Software</title>
         
         <link rel="icon" href="/favicon.ico" />
       </Head>

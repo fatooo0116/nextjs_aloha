@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>2.122 Aloha Tech Software</title>
+        <title>xxxw11 Aloha Tech Software</title>
         
         <link rel="icon" href="/favicon.ico" />
       </Head>

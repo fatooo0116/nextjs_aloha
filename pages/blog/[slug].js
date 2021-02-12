@@ -12,12 +12,6 @@ export default function posts(allPosts) {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Aloha Tech Software</title>
-        
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="styles/main.css" />
-      </Head>
 
 
       <Header />

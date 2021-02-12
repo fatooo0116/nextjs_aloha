@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import styles from '../styles/Home.module.css'
 import Header from './tpl/_header'
 import Footer from './tpl/_footer'
@@ -11,12 +11,6 @@ import {getAllPostsForHome} from '../lib/api'
 export default function Home(props) {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Aloha Tech Software</title>
-        
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="styles/main.css" />
-      </Head>
 
 
       <Header />
@@ -24,8 +18,8 @@ export default function Home(props) {
         <main>
             <h2>Aloha Tech Software</h2>
             <ul>
-                {props.allPosts.map((post) => (
-                    <li>{post}</li>
+                {props.allPosts.map((post , key) => (
+                    <li key={key} >{post}</li>
                 ))}
             </ul>               
         </main>

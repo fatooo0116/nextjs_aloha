@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Menu() {
     return (
-            <div class="global_menu">
+            <div className="global_menu">
                 <ul>
                     <li>                       
                         <Link href="/">

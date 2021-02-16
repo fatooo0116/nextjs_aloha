@@ -7,6 +7,7 @@
     Description: Description
     Version: 1.0.0
 */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap");
 /* CSS Document */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -433,6 +434,74 @@ a:hover {
   background-color: none;
   color: #C7C7C7; }
 
+/*    Layout CSS   */
+.full_h {
+  height: 100vh; }
+
+.center_box {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* Logo  */
+#global_logo {
+  z-index: 100;
+  width: 13vw;
+  margin-top: 3.125vw;
+  margin-left: 3.125vw;
+  position: fixed; }
+  #global_logo a {
+    display: block; }
+    #global_logo a img {
+      width: 100%; }
+
+/*   */
+.menuBtn {
+  width: 2.5vw;
+  height: 1.64062vw;
+  margin-top: 3.125vw;
+  margin-right: 3.125vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99; }
+  .menuBtn .menuBtn-inner {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: relative; }
+    .menuBtn .menuBtn-inner .menuBtn-line {
+      width: 100%;
+      height: 2px; }
+      .menuBtn .menuBtn-inner .menuBtn-line:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .menuBtn .menuBtn-inner .menuBtn-line:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto; }
+      .menuBtn .menuBtn-inner .menuBtn-line:last-of-type {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      .menuBtn .menuBtn-inner .menuBtn-line:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #666;
+        opacity: 1;
+        z-index: 1; }
+
 .footer {
   width: 100%;
   height: 100px;
@@ -448,5 +517,239 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.menuBg {
+  z-index: 1;
+  background-color: #000;
+  height: 0;
+  will-change: transform;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: .7s height ease .4s;
+  transition: .7s height ease .4s; }
+  .menuBg.is-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    bottom: auto;
+    -webkit-transition: .65s height ease;
+    transition: 0.65s height ease; }
+
+.global_menu {
+  z-index: 100;
+  /* pointer-events: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s visibility ease;
+  transition: 1s visibility ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900; }
+
+.menu-closeText {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  cursor: pointer;
+  -webkit-transition: .3s opacity;
+  transition: .3s opacity;
+  color: #fff;
+  text-transform: uppercase; }
+  .menu-closeText > div {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    overflow: hidden; }
+
+.is-open .menu-closeText-label {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: .75s -webkit-transform ease;
+  transition: .75s -webkit-transform ease;
+  transition: .75s transform ease;
+  transition: .75s transform ease,.75s -webkit-transform ease; }
+
+.menu-closeBtn {
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: .3s opacity;
+  transition: 0.3s opacity; }
+
+.is-open .menu-closeBtn {
+  opacity: 1; }
+
+.menu-closeBtn-line:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.is-open .menu-closeBtn-line:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.menu-closeBtn-line:first-of-type:before {
+  -webkit-transform-origin: left;
+  transform-origin: left; }
+
+.menu-closeBtn-line:before {
+  background-color: #fff; }
+
+.menu-closeBtn-line:before {
+  display: block;
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s -webkit-transform ease;
+  transition: 1s -webkit-transform ease;
+  transition: 1s transform ease;
+  transition: 1s transform ease,1s -webkit-transform ease; }
+
+.menu-closeBtn-line:after {
+  display: block;
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s -webkit-transform ease;
+  transition: 1s -webkit-transform ease;
+  transition: 1s transform ease;
+  transition: 1s transform ease,1s -webkit-transform ease; }
+
+.menu-closeBtn-line {
+  width: 100%;
+  height: 2px;
+  margin-top: 50%; }
+
+.menu-closeBtn-line:before {
+  background-color: #fff; }
+
+.menu-closeBtn-line:after, .menu-closeBtn-line:before {
+  display: block;
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s -webkit-transform ease;
+  transition: 1s -webkit-transform ease;
+  transition: 1s transform ease;
+  transition: 1s transform ease,1s -webkit-transform ease; }
+
+.menu-closeBtn-line:first-of-type:after {
+  -webkit-transform-origin: right;
+  transform-origin: right; }
+
+.menu-closeBtn-line:after {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.menu-closeBtn-line:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.menu-closeBtn-line:before {
+  background-color: #fff; }
+
+.menu-closeBtn-line {
+  width: 100%;
+  height: 2px;
+  margin-top: 50%; }
+
+.menu-inner {
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff; }
+  .menu-inner .menu-nav a {
+    -webkit-transition: .5s opacity ease;
+    transition: .5s opacity ease;
+    font-size: 7.03125vw; }
+  .menu-inner .menu-nav .menu-nav-text.split-text {
+    display: inline-flex;
+    position: relative;
+    color: #fff; }
+    .menu-inner .menu-nav .menu-nav-text.split-text span {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 900;
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: 0.35s opacity cubic-bezier(0.1, 0.2, 0.3, 1), 0.5s -webkit-transform cubic-bezier(0.1, 0.2, 0.3, 1);
+      transition: 0.35s opacity cubic-bezier(0.1, 0.2, 0.3, 1), 0.5s -webkit-transform cubic-bezier(0.1, 0.2, 0.3, 1);
+      transition: 0.5s transform cubic-bezier(0.1, 0.2, 0.3, 1), 0.35s opacity cubic-bezier(0.1, 0.2, 0.3, 1);
+      transition: 0.5s transform cubic-bezier(0.1, 0.2, 0.3, 1), 0.35s opacity cubic-bezier(0.1, 0.2, 0.3, 1), 0.5s -webkit-transform cubic-bezier(0.1, 0.2, 0.3, 1); }
+
+@media (min-width: 48.0625em) {
+  .menu-closeBtn {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-top: 3.125vw;
+    margin-right: 3.125vw; }
+
+  .menu-closeText-label {
+    display: block;
+    font-size: 1.5625vw; }
+
+  .menu-body {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto; }
+
+  .menu-nav a {
+    display: block;
+    position: relative;
+    letter-spacing: .075em;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: #fff;
+    line-height: 1.05;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+  .menu-nav a + a {
+    padding-top: .05em;
+    transition: .5s opacity ease;
+    font-size: 7.03125vw; } }
 
 /*# sourceMappingURL=main.css.map */

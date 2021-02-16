@@ -3,7 +3,9 @@ import styles from '../styles/Home.module.css'
 import Header from './tpl/_header'
 import Footer from './tpl/_footer'
 
+
 import {getAllPostsForHome} from '../lib/api'
+
 
 
 export default function Home(props) {
@@ -12,7 +14,7 @@ export default function Home(props) {
 
 
       <Header />
-        
+        <Menu />
         <main>
             <h2>Aloha Tech Software</h2>
             <ul>
@@ -33,7 +35,6 @@ export async function getStaticProps() {
   
     return {
         props: {
-          menu:false,
           allPosts:[1,3,4,5]
         },
       }

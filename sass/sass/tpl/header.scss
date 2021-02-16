@@ -1,0 +1,78 @@
+
+
+
+/* Logo  */
+#global_logo{
+    z-index: 100;
+    width: 13vw;
+    margin-top: 3.125vw;
+    margin-left: 3.125vw;
+    position: fixed;
+
+    a{
+        display:block;
+        // max-width: 300px;;
+        img{
+            width:100%;
+        }
+    }
+}
+
+/*   */
+
+.menuBtn {
+    width: 2.5vw;
+    height: 1.64062vw;
+    margin-top: 3.125vw;
+    margin-right: 3.125vw;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    .menuBtn-inner {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        position: relative;
+        .menuBtn-line {
+            width: 100%;
+            height: 2px;
+
+            &:first-of-type {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &:nth-of-type(2) {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &:last-of-type {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            &:after {
+                display: block;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #666;
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+    }
+}

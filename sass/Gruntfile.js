@@ -10,7 +10,7 @@ grunt.initConfig({
     sass: {
         dist: {
             files: {
-                '../styles/main.css': 'sass/style.scss'
+                '../public/main.css': 'sass/style.scss'
             }
         }
     },

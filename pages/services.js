@@ -14,7 +14,7 @@ export default function Home(props) {
 
 
       <Header />
-        <Menu />
+       
         <main>
             <h2>Aloha Tech Software</h2>
             <ul>

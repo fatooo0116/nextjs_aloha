@@ -1,7 +1,7 @@
-import Head from 'next/head'
+
 import styles from '../../styles/Home.module.css'
-import Header from '../tpl/_header'
-import Footer from '../tpl/_footer'
+// import Header from '/tpl/_header'
+// import Footer from '/tpl/_footer'
 
 import {getAllPostsForHome} from '../../lib/api'
 
@@ -14,16 +14,15 @@ export default function posts(allPosts) {
     <div className={styles.container}>
 
 
-      <Header />
-
-        <Menu />
+    
+       
 
         <main>
             <h2>POST</h2>
           
         </main>
 
-      <Footer />
+    
 
     </div>
   )

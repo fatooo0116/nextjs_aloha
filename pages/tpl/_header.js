@@ -1,7 +1,7 @@
 
 import Head from 'next/head'
 import React from 'react'
-import Menu from './menu'
+import Menu from './_menu'
 
 class Header extends React.Component{
   constructor(props){

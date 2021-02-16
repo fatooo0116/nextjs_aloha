@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Header from '../tpl/_header'
 import Footer from '../tpl/_footer'
-import Menu from '../tpl/_menu'
+
 import {getAllPostsForHome} from '../../lib/api'
 
 

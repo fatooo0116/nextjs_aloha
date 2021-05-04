@@ -22,7 +22,7 @@ class Header extends React.Component{
         
        <Head>
         <title>Aloha Tech Software</title>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="./main.css" />
         

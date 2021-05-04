@@ -234,8 +234,9 @@
 }
 
 
-@media (min-width: 48.0625em){
+// @media (min-width: 48.0625em){
     
+
     .menu-closeBtn {
         width: 2.5vw;
         height: 2.5vw;
@@ -268,5 +269,18 @@
         padding-top: .05em;
         transition: .5s opacity ease;
         font-size: 7.03125vw;
-    }    
+    }  
+    
+    
+// }
+
+
+@media (max-width: 600px){
+    .menu-inner .menu-nav a{
+        font-size:50px;
+    }
+    .menu-body{
+        width:100%;
+        padding-left:80px;
+    }
 }

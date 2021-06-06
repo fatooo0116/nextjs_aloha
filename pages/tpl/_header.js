@@ -44,7 +44,7 @@ class Header extends React.Component{
         <header>
           <div id="global_logo">
             <a href="/">
-              <img src="https://api.aloha-tech.com/wp-content/uploads/2021/02/aloha_logo_w.svg" />
+              <img src="http://api.aloha-tech.com/wp-content/uploads/2021/06/aloha_logo_2w.svg" />
             </a>
           </div>          
         </header>

@@ -2,15 +2,16 @@
 import styles from '../styles/Home.module.css'
 import Header from './tpl/_header'
 import Footer from './tpl/_footer'
-
-import {getAllPostsForHome} from '../lib/api'
+import { Parallax } from 'react-scroll-parallax';
 
 
 export default function Home(props) {
   return (
    <div className={styles.container}>
 
-      <Header />      
+      <Header />  
+
+
         <main className="page_contents">
 
           <div id="intro" className="works-intro">
@@ -29,7 +30,7 @@ export default function Home(props) {
           
           <div id="archive" >
             <div className="_innerbox  u-inner" >
-              <ul >            
+              <ul className="works-archive-list">            
                 {props.allPosts.data.map((post , key) => (
                     <li  className="works-archive__item" key={key} >
                         <a href="https://www.m-hand.co.jp/works/maeda-corporation-recruit-site/" className="works-archive__link">

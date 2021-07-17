@@ -59,8 +59,7 @@ class Header extends React.Component{
           </div>          
         </header>
         
-        <div className={(this.state.menuOpen)? "menuBg is-open":"menuBg" } id="menuBg">
-        
+        <div className={(this.state.menuOpen)? "menuBg is-open":"menuBg" } id="menuBg">        
           <Menu />
         </div>
 

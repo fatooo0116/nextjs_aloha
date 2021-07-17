@@ -275,6 +275,23 @@
 // }
 
 
+.menuBg{
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.menuBg.is-open{
+    -webkit-transform: translateX(-0%);
+    -moz-transform: translateX(-0%);
+    -ms-transform: translateX(-0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+
+
 @media (max-width: 600px){
     .menu-inner .menu-nav a{
         font-size:50px;

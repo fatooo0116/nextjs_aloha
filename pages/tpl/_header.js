@@ -29,7 +29,12 @@ class Header extends React.Component{
         
        <Head>
         <title>Aloha Tech Software</title>
+
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="./main.css" />
         
@@ -67,9 +72,7 @@ class Header extends React.Component{
             </div>
         </div>   
 
-        <div id="top" className="full_h  center_box">
-          <h1>Website , Mobile App <br/>Software Development.</h1>
-        </div>
+
 
 
       </>

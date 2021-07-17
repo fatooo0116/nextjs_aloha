@@ -7,7 +7,7 @@
     Description: Description
     Version: 1.0.0
 */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@500;600;800&display=swap");
 /* CSS Document */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -15,6 +15,17 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 400;
+  vertical-align: bottom;
+  background: transparent; }
+
 html {
   font-family: sans-serif;
   /* 1 */
@@ -443,6 +454,78 @@ a:hover {
   align-items: center;
   justify-content: center; }
 
+/*   Work Page */
+.u-poppins {
+  font-family: "Poppins", "Noto Sans ", sans-serif; }
+
+.u-inner {
+  box-sizing: border-box; }
+
+ul, ol {
+  list-style: none; }
+
+.works-intro__txt-wrap {
+  vertical-align: middle; }
+
+.c-head01 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase; }
+
+.c-head01 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase; }
+
+.works-intro__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px; }
+
+.works-intro__item {
+  margin-right: 25px; }
+
+.works-intro__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 600; }
+
+@media (min-width: 1024px) {
+  .u-inner {
+    width: 100%;
+    max-width: 1420px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .works-intro__tab {
+    margin-top: 27px; }
+
+  .works-intro__inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 180px;
+    padding-bottom: 95px; }
+
+  .works-intro__item {
+    margin-right: 48px; }
+
+  .works-intro__item.is-current .works-intro__link {
+    color: #979da4; }
+
+  .works-intro__link {
+    font-size: 1.6rem; } }
+@media (min-width: 600px) {
+  .c-head01 {
+    font-size: 8rem; } }
 /* Logo  */
 #global_logo {
   z-index: 100;

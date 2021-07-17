@@ -7,14 +7,21 @@ class Header extends React.Component{
   constructor(props){
       super(props)
       this.state = {
-          menuOpen:true
-      }
-      this.ToggleMenu = this.ToggleMenu.bind(this);
+          menuOpen:0
+      }    
   }
-  ToggleMenu(){
-      alert('xx');
-      this.setState({menuOpen:!this.state.menuOpen});
+
+
+  ToggleMenu = () =>{
+     console.log("FUCK");
+    //  this.setState({menuOpen:!this.state.menuOpen});
   }
+
+  home = () =>{
+    window.alert("xxx");
+  }
+
+
   render(){
 
     return(
@@ -35,32 +42,32 @@ class Header extends React.Component{
               gtag('config', 'UA-157417377-2');`
             }}
           />
-
-
-
-
       </Head>
+
+      
         
         <header>
           <div id="global_logo">
-            <a href="/">
+            <a href="/" onClick={this.home}>
               <img src="http://api.aloha-tech.com/wp-content/uploads/2021/06/aloha_logo_2w.svg" />
             </a>
           </div>          
         </header>
-        <div class={(this.state.menuOpen)? "menuBg is-open":"menuBg" } id="menuBg"></div>
         
-        <Menu />
+        <div className={(this.state.menuOpen)? "menuBg is-open":"menuBg" } id="menuBg">
+        
+          <Menu />
+        </div>
 
-        <div id="menuBtn" class="menuBtn" onClick={this.ToggleMenu}>
-            <div class="menuBtn-inner">
-              <div class="menuBtn-line"></div>
-              <div class="menuBtn-line"></div>
-              <div class="menuBtn-line"></div>
+        <div id="menuBtn" className="menuBtn" onClick={this.ToggleMenu}>
+            <div className="menuBtn-inner">
+              <div className="menuBtn-line"></div>
+              <div className="menuBtn-line"></div>
+              <div className="menuBtn-line"></div>
             </div>
         </div>   
 
-        <div id="top" class="full_h  center_box">
+        <div id="top" className="full_h  center_box">
           <h1>Website , Mobile App <br/>Software Development.</h1>
         </div>
 

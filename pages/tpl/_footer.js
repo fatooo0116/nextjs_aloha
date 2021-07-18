@@ -11,7 +11,7 @@ export default function Footer() {
         </Parallax>
 
           
-            <div  class="contactme ft-con__inner ">                
+            <div  className="contactme ft-con__inner ">                
                 <div className="" >
                     <ul className="footer_menu">
                         <li><a href="#">COMPANY</a></li>

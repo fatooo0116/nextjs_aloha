@@ -30,8 +30,8 @@ export default function Home(props) {
           <div id="archive" >
             <div class="_innerbox" >
               <ul >
-              {props.allPosts.edges.map((post , key) => (
-                    <li key={key} >{post.node.title}</li>
+              {props.allPosts.map((post , key) => (
+                    <li key={key} >{post}</li>
                 ))}
               </ul>
             </div>

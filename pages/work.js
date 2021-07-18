@@ -4,8 +4,6 @@ import Header from './tpl/_header'
 import Footer from './tpl/_footer'
 
 
-import {getAllPostsForHome} from '../lib/api'
-
 
 
 export default function Home(props) {
@@ -49,13 +47,12 @@ export default function Home(props) {
 
 
 export async function getStaticProps() {
-   const allPosts = await getAllPostsForHome()
+  // const allPosts = await getAllPostsForHome()
 
-    console.log(allPosts);
-  
+ 
     return {
         props: {
-          allPosts:allPosts
+          allPosts:[1,2,3]
         },
       }
   }

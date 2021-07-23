@@ -36,7 +36,7 @@ class Header extends React.Component{
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="./main.css" />
+        <link rel="stylesheet" href="/main.css" />
         
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157417377-2"></script>
         <script

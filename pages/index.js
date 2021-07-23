@@ -4,6 +4,19 @@ import Header from './tpl/_header'
 import Footer from './tpl/_footer'
 import { Parallax } from 'react-scroll-parallax';
 
+import Link from "next/link";
+
+
+const PostLink = props => (
+  <li>
+    <Link href={`/post?title=${props.title}`}>
+      <a>{props.title}</a>
+    </Link>
+  </li>
+);
+
+
+
 
 export default function Home(props) {
   return (
@@ -33,14 +46,16 @@ export default function Home(props) {
               <ul className="works-archive-list">            
                 {props.allPosts.data.map((post , key) => (
                     <li  className="works-archive__item" key={key} >
-                        <a href="https://www.m-hand.co.jp/works/maeda-corporation-recruit-site/" className="works-archive__link">
+                      <Link href={`/works/${post.title}`}>
+                          <div>
                             <div className="works-archive__img-wrap">
-                                <div className="works-archive__img" style={{"background-image": "url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)"}}></div>
+                                <div className="works-archive__img" style={{"backgroundImage": "url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)"}}></div>
                             </div>
                             <div className="works-archive__area-txt">
                                 <p className="works-archive__head u-poppins">{post.title}</p>
                             </div>                                               
-                        </a>
+                            </div>
+                        </Link>
                     </li>
                 ))}                
               </ul>

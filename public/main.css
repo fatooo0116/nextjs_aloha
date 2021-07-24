@@ -540,7 +540,8 @@ ul, ol {
   flex-wrap: wrap;
   justify-content: space-between; }
   .works-archive-list li {
-    margin-bottom: 7%; }
+    width: calc(50%  - 15px);
+    box-sizing: border-box; }
 
 .works-archive__link .works-archive__head {
   display: block;
@@ -564,6 +565,19 @@ ul, ol {
 
   .works-archive__item:nth-child(even) {
     margin-right: 0; } }
+#single_post {
+  min-height: 500px; }
+  #single_post .single_top {
+    min-height: 300px;
+    background: #afa7a7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center; }
+    #single_post .single_top h1 {
+      text-align: center; }
+
 /* Logo  */
 #global_logo {
   z-index: 100;
@@ -661,6 +675,9 @@ ul, ol {
 
 .contactme {
   padding-top: 80px; }
+  .contactme small {
+    text-transform: uppercase;
+    font-size: 13px; }
 
 .js-pagetop {
   position: fixed;
@@ -703,6 +720,50 @@ ul, ol {
 @media (min-width: 600px) {
   .ft-con__inner {
     padding-bottom: 20px; } }
+.work_nav {
+  background: #fff;
+  padding: 90px 15px; }
+
+ul.works-pager__list {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; }
+  ul.works-pager__list li a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-transform: uppercase; }
+    ul.works-pager__list li a.prev {
+      padding-left: 90px; }
+      ul.works-pager__list li a.prev:before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background: #212836;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+    ul.works-pager__list li a.next {
+      padding-right: 90px; }
+      ul.works-pager__list li a.next:before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 0;
+        width: 80px;
+        height: 1px;
+        background: #212836;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+
+@media (min-width: 600px) {
+  .works-pager__list {
+    padding: 0 90px; } }
 .menuBg {
   z-index: 1;
   background-color: #000;

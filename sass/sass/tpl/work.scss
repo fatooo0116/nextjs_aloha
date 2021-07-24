@@ -1,5 +1,7 @@
 
 
+
+
 .works-archive__img {
     position: relative;
     padding-top: 170.55%;
@@ -11,12 +13,16 @@
     transition: transform 1.2s ease, -webkit-transform 1.2s ease;
 }
 
+
+
 .works-archive-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     li{
-        margin-bottom: 7%;;
+        width:calc(50%  - 15px);
+        
+        box-sizing: border-box;
     }
 }
 .works-archive__link .works-archive__head{

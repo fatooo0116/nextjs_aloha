@@ -47,6 +47,10 @@
 
   .contactme{
     padding-top:80px;
+    small{
+      text-transform: uppercase;
+      font-size: 13px;
+    }
   }
 
   .js-pagetop{
@@ -100,3 +104,74 @@
      padding-bottom: 20px;
   }
 }
+
+
+
+
+.work_nav{
+  background:#fff;
+  padding:90px 15px;
+}
+
+ul.works-pager__list {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  li{
+    a{
+      display: inline-block;
+      position: relative;
+      // font-size: px;
+     
+      
+      text-decoration: none;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      text-transform: uppercase;
+
+        &.prev{
+          padding-left: 90px;
+
+          &:before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 0;
+            
+            width: 80px;
+            height: 1px;
+            background: #212836;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+          }
+        }
+
+
+        &.next{
+          padding-right: 90px;
+          &:before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: 0;            
+            width: 80px;
+            height: 1px;
+            background: #212836;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+          }  
+        }
+      
+    }
+  }
+}
+
+
+@media (min-width: 600px){
+  .works-pager__list {
+    padding: 0 90px;
+  }
+}
+
+

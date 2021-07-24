@@ -7,13 +7,6 @@ import { Parallax } from 'react-scroll-parallax';
 import Link from "next/link";
 
 
-const PostLink = props => (
-  <li>
-    <Link href={`/post?title=${props.title}`}>
-      <a>{props.title}</a>
-    </Link>
-  </li>
-);
 
 
 
@@ -45,16 +38,16 @@ export default function Home(props) {
             <div className="_innerbox  u-inner" >
               <ul className="works-archive-list">            
                 {props.allPosts.data.map((post , key) => (
-                    <li  className="works-archive__item" key={key} >
+                    <li  className="works-archive__item" key={post.id} >
                       <Link href={`/works/${post.title}`}>
-                          <div>
+                          <a hre={`/works/${post.title}`} >
                             <div className="works-archive__img-wrap">
                                 <div className="works-archive__img" style={{"backgroundImage": "url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)"}}></div>
                             </div>
                             <div className="works-archive__area-txt">
                                 <p className="works-archive__head u-poppins">{post.title}</p>
                             </div>                                               
-                            </div>
+                          </a>
                         </Link>
                     </li>
                 ))}                
@@ -102,3 +95,7 @@ export async function getStaticProps() {
         },
       }
   }
+
+
+
+  

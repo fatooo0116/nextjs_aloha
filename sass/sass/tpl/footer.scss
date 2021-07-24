@@ -24,6 +24,8 @@
     height:400px;
     overflow: hidden;
     position: relative;
+
+
     &:before{
       position: absolute;
       content:"";
@@ -37,6 +39,7 @@
 
   .footer_menu{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     li{
       margin-right:30px;
@@ -47,6 +50,8 @@
 
   .contactme{
     padding-top:80px;
+    padding-left:15px;
+    padding-right:15px;    
     small{
       text-transform: uppercase;
       font-size: 13px;
@@ -102,6 +107,10 @@
   @media (min-width: 600px){
   .ft-con__inner {
      padding-bottom: 20px;
+  }
+
+  footer .parallax_img{
+    height:300px;
   }
 }
 

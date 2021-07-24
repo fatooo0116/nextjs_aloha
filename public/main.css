@@ -525,6 +525,9 @@ ul, ol {
 @media (min-width: 600px) {
   .c-head01 {
     font-size: 8rem; } }
+#archive {
+  padding: 0 15px; }
+
 .works-archive__img {
   position: relative;
   padding-top: 170.55%;
@@ -541,6 +544,7 @@ ul, ol {
   justify-content: space-between; }
   .works-archive-list li {
     width: calc(50%  - 15px);
+    margin-bottom: 30px;
     box-sizing: border-box; }
 
 .works-archive__link .works-archive__head {
@@ -581,7 +585,7 @@ ul, ol {
 /* Logo  */
 #global_logo {
   z-index: 100;
-  width: 13vw;
+  width: 200px;
   margin-top: 3.125vw;
   margin-left: 3.125vw;
   position: fixed; }
@@ -592,8 +596,8 @@ ul, ol {
 
 /*   */
 .menuBtn {
-  width: 2.5vw;
-  height: 1.64062vw;
+  width: 25px;
+  height: 20px;
   margin-top: 3.125vw;
   margin-right: 3.125vw;
   position: fixed;
@@ -669,12 +673,15 @@ ul, ol {
 
 .footer_menu {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px; }
   .footer_menu li {
     margin-right: 30px; }
 
 .contactme {
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px; }
   .contactme small {
     text-transform: uppercase;
     font-size: 13px; }
@@ -719,7 +726,10 @@ ul, ol {
     padding-right: 80px; } }
 @media (min-width: 600px) {
   .ft-con__inner {
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+
+  footer .parallax_img {
+    height: 300px; } }
 .work_nav {
   background: #fff;
   padding: 90px 15px; }

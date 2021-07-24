@@ -12,8 +12,23 @@ import Link from "next/link";
 
 
 export default function Home(props) {
+
+
+  console.log(props);
+
+  /*
+  let archive_list = [];
+
+  props.allPosts.data.map((post , key) => (
+
+  ))}  
+  */
+
+
+  
+
   return (
-   <div className={styles.container}>
+   <div id="outter">
 
       <Header />  
 
@@ -42,7 +57,7 @@ export default function Home(props) {
                       <Link href={`/works/${post.title}`}>
                           <a hre={`/works/${post.title}`} >
                             <div className="works-archive__img-wrap">
-                                <div className="works-archive__img" style={{"backgroundImage": "url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)"}}></div>
+                                <div className="works-archive__img" style={{"backgroundImage": (post.img)? "url("+post.img+")":"url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)" }}></div>
                             </div>
                             <div className="works-archive__area-txt">
                                 <p className="works-archive__head u-poppins">{post.title}</p>

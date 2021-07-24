@@ -71,8 +71,7 @@ export const getServerSideProps = async (context) => {
 
    
     return {
-        props: {
-        
+        props: {        
           detail:data
         },
       }

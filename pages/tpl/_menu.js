@@ -2,7 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 
 
+
+
+
 function Menu(props) {
+
+        
+
         return (
             <div id="menu" className="global_menu">
             <div id="menu-closeText" className="menu-closeText menu-close"  >

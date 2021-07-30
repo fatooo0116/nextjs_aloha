@@ -794,7 +794,9 @@ ul.works-pager__list {
     height: 100vh;
     bottom: auto;
     -webkit-transition: .65s height ease;
-    transition: 0.65s height ease; }
+    transition: .65s height ease; }
+  .menuBg.is-open + #menuBtn {
+    display: none; }
 
 .global_menu {
   z-index: 100;

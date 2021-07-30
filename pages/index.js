@@ -40,10 +40,10 @@ export default function Home(props) {
               <div className="works-intro__txt-wrap txtWrap">
                 <h1 className="works-intro__head tit c-head01 u-poppins">works</h1>
                 <ul className="works-intro__tab tab">
-                  <li className="works-intro__item item u-poppins is-current"><a className="works-intro__link" href="https://www.m-hand.co.jp/works/">all</a></li>
-                  <li className="works-intro__item item u-poppins"><a className="works-intro__link" href="https://www.m-hand.co.jp/works/cat/service">SERVICE</a></li>
-                  <li className="works-intro__item item u-poppins"><a className="works-intro__link" href="https://www.m-hand.co.jp/works/cat/corporate">CORPORATE</a></li>
-                  <li className="works-intro__item item u-poppins"><a className="works-intro__link" href="https://www.m-hand.co.jp/works/cat/recruit">RECRUIT</a></li>
+                  <li className="works-intro__item item u-poppins is-current"><a className="works-intro__link" href="/works/">all</a></li>
+                  <li className="works-intro__item item u-poppins"><a className="works-intro__link" href="/service">SERVICE</a></li>
+                  <li className="works-intro__item item u-poppins"><a className="works-intro__link" href="/corporate">CORPORATE</a></li>
+                  <li className="works-intro__item item u-poppins"><a className="works-intro__link" href="/recruit">RECRUIT</a></li>
                 </ul>
               </div>
             </div>

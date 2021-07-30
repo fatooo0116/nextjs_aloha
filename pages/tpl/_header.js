@@ -3,6 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import Menu from './_menu'
 
+
 class Header extends React.Component{
   constructor(props){
       super(props)
@@ -13,8 +14,8 @@ class Header extends React.Component{
 
 
   ToggleMenu = () =>{
-     console.log("FUCK");
-    //  this.setState({menuOpen:!this.state.menuOpen});
+    //  console.log("FUCK");
+     this.setState({menuOpen:!this.state.menuOpen});
   }
 
   home = () =>{

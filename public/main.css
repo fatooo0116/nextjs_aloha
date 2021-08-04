@@ -799,6 +799,7 @@ ul.works-pager__list {
     display: none; }
 
 .global_menu {
+  overflow: hidden;
   z-index: 100;
   /* pointer-events: none; */
   position: fixed;
@@ -838,8 +839,7 @@ ul.works-pager__list {
   transition: .75s transform ease,.75s -webkit-transform ease; }
 
 .menu-closeBtn {
-  z-index: 1;
-  pointer-events: none;
+  z-index: 100;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -1022,6 +1022,12 @@ ul.works-pager__list {
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%); }
+
+.closing .menuBg.is-open {
+  height: 0vh;
+  bottom: auto;
+  -webkit-transition: .65s height ease;
+  transition: .65s height ease; }
 
 @media (max-width: 600px) {
   .menu-inner .menu-nav a {

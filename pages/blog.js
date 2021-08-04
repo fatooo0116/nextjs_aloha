@@ -8,13 +8,13 @@ import {getAllPostsForHome} from '../lib/api'
 
 
 
-export default function Home(props) {
+export default function BLOG(props) {
   return (
     <div className={styles.container}>
 
 
       <Header />
-      
+       
         <main>
             <h2>Aloha Tech Software</h2>
             <ul>

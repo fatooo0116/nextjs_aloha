@@ -11,10 +11,11 @@ function Menu(props) {
 
         return (
             <div id="menu" className="global_menu">
-            <div id="menu-closeText" className="menu-closeText menu-close"  >
+            <div id="menu-closeText" className="menu-closeText menu-close" onClick={props.MenuClose}  >
                 <div><div className="menu-closeText-label avenir"    >close</div></div>
             </div>
-            <div id="menu-closeBtn" className="menu-closeBtn menu-close is-clickable">
+
+            <div id="menu-closeBtn" className="menu-closeBtn menu-close is-clickable" onClick={props.MenuClose}>
                 <div className="menu-closeBtn-line"></div>
                 <div className="menu-closeBtn-line"></div>
             </div>
@@ -25,13 +26,13 @@ function Menu(props) {
                 <div className="menu-body avenir">
                     <nav id="menu-nav" className="menu-nav">
                         
-                        <Link href={'/'} className="is-current">
-                            <a><div className="menu-nav-text split-text"><span>t</span><span>o</span><span>p</span></div></a>
+                        <Link href={'/blog'} className="is-current">
+                            <a><div className="menu-nav-text split-text"><span>B</span><span>L</span><span>O</span><span>G</span></div></a>
                         </Link>                                                      
-                        <Link href="/company/">
-                            <a><div className="menu-nav-text split-text"><span>c</span><span>o</span><span>m</span><span>p</span><span>a</span><span>n</span><span>y</span></div></a>
+                        <Link href="/about/">
+                            <a><div className="menu-nav-text split-text"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></div></a>
                         </Link>          
-                        <Link href="/work">
+                        <Link href="/works">
                             <a><div className="menu-nav-text split-text"><span>w</span><span>o</span><span>r</span><span>k</span></div></a>
                         </Link>                                                 
                         <Link href="/services/">
@@ -44,19 +45,7 @@ function Menu(props) {
                     </nav>
                 </div>
             </div> 
-            <ul>
-                <li>                       
-                    <Link href="/">
-                        <a>Home</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/news">
-                        <a>News</a>
-                    </Link>
-                </li>
-                
-            </ul>
+  
         </div>
         )
     }

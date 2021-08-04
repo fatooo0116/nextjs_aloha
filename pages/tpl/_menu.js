@@ -25,16 +25,15 @@ function Menu(props) {
             <div className="menu-inner">
                 <div className="menu-body avenir">
                     <nav id="menu-nav" className="menu-nav">
-                        
+                        <Link href={'/'} className="is-current">
+                            <a><div className="menu-nav-text split-text"><span>H</span><span>O</span><span>M</span><span>E</span></div></a>
+                        </Link>  
                         <Link href={'/blog'} className="is-current">
                             <a><div className="menu-nav-text split-text"><span>B</span><span>L</span><span>O</span><span>G</span></div></a>
                         </Link>                                                      
                         <Link href="/about/">
                             <a><div className="menu-nav-text split-text"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></div></a>
-                        </Link>          
-                        <Link href="/works">
-                            <a><div className="menu-nav-text split-text"><span>w</span><span>o</span><span>r</span><span>k</span></div></a>
-                        </Link>                                                 
+                        </Link>                                                       
                         <Link href="/services/">
                             <a><div className="menu-nav-text split-text"><span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></div></a>
                         </Link>

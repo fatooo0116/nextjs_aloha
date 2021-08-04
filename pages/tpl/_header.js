@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Menu from './_menu'
+import Link from 'next/link'
 
 
 class Header extends React.Component{
@@ -73,9 +74,9 @@ class Header extends React.Component{
             
             <header>
               <div id="global_logo">
-                <a href="/" onClick={this.home}>
+                <Link href={'/'} className="is-current">
                   <img src="http://api.aloha-tech.com/wp-content/uploads/2021/06/aloha_logo_2w.svg" />
-                </a>
+                </Link>
               </div>          
             </header>
             

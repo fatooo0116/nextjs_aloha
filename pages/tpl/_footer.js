@@ -6,10 +6,12 @@ import Link from 'next/link'
 export default function Footer() {
     return (
         <footer className="">
-
+            
+            {/* 
         <Parallax className="parallax_img" y={[-20, 20]} tagOuter="figure">
             <img src="http://api.aloha-tech.com/wp-content/uploads/2021/07/group-people-holding-hand-assemble-togetherness.jpg" />
         </Parallax>
+        */}
 
           
             <div  className="contactme ft-con__inner ">                

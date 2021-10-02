@@ -1,5 +1,5 @@
 
-
+import Link from 'next/link'
 
 export default function workFooter() {
     return (
@@ -12,7 +12,9 @@ export default function workFooter() {
                             <a href="#" class="prev">prev</a>
                         </li>
                         <li class="works-pager__item is-back">
-                        <a href="#" class="works-pager__link u-poppins">list</a>
+                        <Link href={`/`}>
+                        list
+                        </Link>
                         </li>
                         <li class="works-pager__item  ">
                         <a href="#" class="next">next</a>

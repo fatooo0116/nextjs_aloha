@@ -46,7 +46,7 @@ class Header extends React.Component{
   render(){
 
     return(
-        <div className={(this.state.menuCloseAni)? "closing":"" }>
+        <div id="aloha_header"   className={(this.state.menuCloseAni)? "closing":"" }>
         
           <Head>
             <title>Aloha Tech Software</title>

@@ -1,26 +1,21 @@
+import styles from '../../styles/Home.module.css'
 import Header from '../tpl/_header'
-import Footer from '../tpl/_workFooter'
+import Footer from '../tpl/_footer'
+
+// import {getAllPostsForHome} from '../../lib/api'
+
 import { useRouter } from 'next/router';
 
-import styles from '../../styles/Home.module.css'
 
-
-
-
-export default function WorkId(props) {
+export default function BlogId(props) {
 
   const router = useRouter();
-  
-  console.log(router);
   console.log(props)
-
-
 
 
   return (
     <div className={styles.container}>
-
-      <Header />      
+      <Header />
       <main className="page_contents">    
           <div id="single_post" >
             <div className="single_top" >
@@ -35,7 +30,6 @@ export default function WorkId(props) {
           </div>
       </main>
       <Footer />
-
     </div>
   )
 }
@@ -43,19 +37,18 @@ export default function WorkId(props) {
 
 
 
-
 export const getServerSideProps = async (context) => {
 
-  console.log(context.params.workId);
+  console.log(context.params.blogId);
 
-  const res = await fetch(`https://api.aloha-tech.com//wp-json/work/v1/get_post_by_title`,{
+  const res = await fetch(`https://api.aloha-tech.com//wp-json/work/v1/get_blog_by_title`,{
     method: 'POST',
     // headers 加入 json 格式
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      title: context.params.workId,    
+      title: context.params.blogId,    
     })
    });
    const data = await res.json()

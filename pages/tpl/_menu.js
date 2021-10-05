@@ -28,7 +28,7 @@ function Menu(props) {
                         <Link href={'/'} className="is-current">
                             <a><div className="menu-nav-text split-text"><span>H</span><span>O</span><span>M</span><span>E</span></div></a>
                         </Link>  
-                        <Link href={'/blog'} className="is-current">
+                        <Link href={'/myblog'} className="is-current">
                             <a><div className="menu-nav-text split-text"><span>B</span><span>L</span><span>O</span><span>G</span></div></a>
                         </Link>                                                      
                         <Link href="/about/">

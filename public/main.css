@@ -6,7 +6,7 @@
     Description: Description
     Version: 1.0.0
 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@500;600;700;800&display=swap");
 body {
   background: #edede8; }
 
@@ -468,14 +468,14 @@ ul, ol {
 
 .c-head01 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
   text-transform: uppercase; }
 
 .c-head01 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
   text-transform: uppercase; }
@@ -509,7 +509,7 @@ ul, ol {
     margin-top: 27px; }
 
   .works-intro__inner {
-    max-width: 1120px;
+    /* max-width: 1120px;*/
     margin: 0 auto;
     padding-top: 180px;
     padding-bottom: 95px; }
@@ -525,6 +525,9 @@ ul, ol {
 @media (min-width: 600px) {
   .c-head01 {
     font-size: 8rem; } }
+#home_bn1 > span {
+  font-size: 40px; }
+
 #archive {
   padding: 0 15px; }
 

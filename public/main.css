@@ -528,6 +528,11 @@ ul, ol {
 #home_bn1 > span {
   font-size: 40px; }
 
+@media (max-width: 768px) {
+  .aloha_small_title {
+    font-size: 16px;
+    padding: 20px;
+    line-height: 1.7em; } }
 #archive {
   padding: 0 15px; }
 

@@ -15,6 +15,7 @@ export default function WorkId(props) {
   console.log(props)
 
 
+  // let imgbk = "background-image:url("+props.detail.top_img[0].url+")"
 
 
   return (
@@ -23,15 +24,20 @@ export default function WorkId(props) {
       <Header />      
       <main className="page_contents">    
           <div id="single_post" >
-            <div className="single_top" >
-              <h1>{router.query.workId}</h1>
+            <div className="single_top"  style={{backgroundImage:"url(" + props.detail.top_img[0].url + ")" }} >
+
+              <div class="top_desc" >
+                <div class="box">
+                  <h1>{router.query.workId}</h1>
+                </div>
+              </div>
+             
             </div>
 
-            <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />                
+            <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />  
 
-            <div className="content_img">
-              Content_Img
-            </div>
+
+            
           </div>
       </main>
       <Footer />

@@ -20,6 +20,8 @@
             width:100%;
         }
     }
+
+
 }
 
 /*   */
@@ -100,6 +102,17 @@
         }
     }
   }
+
+
+
+
+  @media (max-width: 1024px){
+    main.page_contents {
+        padding-top: 84px;
+    }
+  }
+
+
 
 
   @media (max-width: 600px){

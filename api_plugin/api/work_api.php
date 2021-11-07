@@ -142,7 +142,7 @@ function get_post_by_title_func($data){
               'excerpt' => get_the_excerpt(get_the_ID()),
               'link' => get_permalink(),
               'date'=>get_the_date('Y-m-d m:i:s'),
-              'content'=> get_the_content(),
+              'content'=> do_shortcode(get_the_content()),
               'img'=> get_the_post_thumbnail_url(get_the_ID()),
               'img_s'=> get_the_post_thumbnail_url(get_the_ID(),'medium'),      
               'top_img'=> json_decode($value),
@@ -150,11 +150,12 @@ function get_post_by_title_func($data){
             );
 
             
-            
-            $the_content = apply_filters('the_content', get_the_content());
+            /*
+            $the_content = apply_filters('the_content',get_the_content(get_the_ID()));
             if ( !empty($the_content) ) {
-              $post_item['content'] = $the_content;
+              $post_item['content'] = do_shortcode($the_content);
             }
+            */
             
       
 

@@ -17,14 +17,19 @@ export default function WorkId(props) {
 
   // let imgbk = "background-image:url("+props.detail.top_img[0].url+")"
 
+    let imgsrc = (props.detail.top_img)?props.detail.top_img[0].url:'';
+
+    let main_style = "page_contents "+props.detail.page_style;
 
   return (
     <div className={styles.container}>
 
       <Header />      
-      <main className="page_contents">    
+      <main className={main_style}>    
           <div id="single_post" >
-            <div className="single_top"  style={{backgroundImage:"url(" + props.detail.top_img[0].url + ")" }} >
+            <div className="single_top"   >
+
+            <div class="bk" style={{backgroundImage:"url(" + imgsrc + ")" }} ></div>
 
               <div class="top_desc" >
                 <div class="box">
@@ -34,10 +39,7 @@ export default function WorkId(props) {
              
             </div>
 
-            <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />  
-
-
-            
+            <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />              
           </div>
       </main>
       <Footer />

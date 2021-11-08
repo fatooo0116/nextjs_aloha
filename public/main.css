@@ -656,7 +656,17 @@ ul, ol {
     min-height: 2000px;
     padding-right: 50px; }
     #main_page .main .box {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 50px;
+      width: 100%;
+      max-width: 800px;
+      margin: auto; }
+      #main_page .main .box p {
+        padding-top: 10px;
+        margin-bottom: 1em; }
+      #main_page .main .box h4 {
+        padding-top: 10px;
+        margin-bottom: 1em; }
       #main_page .main .box img {
         width: 100%;
         height: auto;
@@ -665,7 +675,7 @@ ul, ol {
     width: 30%; }
     #main_page .desc .follow {
       position: sticky;
-      top: 20px; }
+      top: 50px; }
       #main_page .desc .follow h3 {
         font-size: 30px;
         font-weight: 600;

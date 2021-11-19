@@ -285,3 +285,23 @@
     }
 
 }
+
+
+@media (max-width: 768px){
+    .small_case .inner{
+        flex-wrap: wrap;
+        .left,
+        .right{
+            width:100%;
+            justify-content: center;
+            display: flex;
+        }
+        .right{
+            padding: 20px;
+            ul{
+                margin-left: 20px;
+                ;
+            }
+        }
+    }
+}

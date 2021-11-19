@@ -1518,6 +1518,18 @@ ul.works-pager__list {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%; } }
+@media (max-width: 768px) {
+  .small_case .inner {
+    flex-wrap: wrap; }
+    .small_case .inner .left,
+    .small_case .inner .right {
+      width: 100%;
+      justify-content: center;
+      display: flex; }
+    .small_case .inner .right {
+      padding: 20px; }
+      .small_case .inner .right ul {
+        margin-left: 20px; } }
 img {
   max-width: 100%; }
 

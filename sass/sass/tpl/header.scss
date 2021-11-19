@@ -2,8 +2,6 @@
 
 
 
-
-
 /* Logo  */
 #global_logo{
     z-index: 100;
@@ -82,6 +80,17 @@
         }
     }
 }
+
+
+.dark #single_post .single_top .top_desc h1{
+    color:#000;
+}
+
+
+
+
+
+
 
 @media (max-width: 1024px){
     #aloha_header {

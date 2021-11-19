@@ -17,15 +17,14 @@ export default function BlogId(props) {
     <div className={styles.container}>
       <Header />
       <main className="page_contents">    
-          <div id="single_post" >
+          <div id="single_blog" >
             <div className="single_top" >
-              <h1>{router.query.workId}</h1>
-            </div>
+              <h1>{props.detail.title}</h1>
+            
 
-            <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />                
+             <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />                
 
-            <div className="content_img">
-              Content_Img
+     
             </div>
           </div>
       </main>

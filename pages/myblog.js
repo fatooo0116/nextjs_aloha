@@ -15,26 +15,39 @@ export default function MyBlog(props) {
   console.log(props);
 
 
+  // let imgbox = (post.img_s)? <img src={post.img_s} /> :'';
+
+
   return (
     <div className={styles.container}>
 
 
       <Header />
-       
-        <main>
-            <h2>Aloha Tech Software</h2>
-            <ul>
-              
+        
+        <main id="blog">
+        <h2>Blog</h2>
+           
+            <div className="blog_outter">              
                 {props.allPosts.data.map((post , key) => (
-                    <li key={key} >
-                      <Link href={`/blogs/${post.title}`}>
-                      {post.title}
-                      </Link>
-                    </li>
-                ))}
-              
-                
-            </ul>               
+                    <div className="box" key={key} >
+                      
+                        <a href={`/blogs/${post.title}`}>
+                        <div className="pimg"><Link href={`/blogs/${post.title}`} >{(post.img)? <img src={post.img} />: '' }</Link></div>
+                        <div className="rtext">
+                          <h3 className="b_title"><Link href={`/blogs/${post.title}`} >{post.title}</Link></h3>
+                          <div className="b_meta">{post.date}</div>
+                          <div className="b_tag">
+                            <Link href={`/blogs/${post.title}`}>#主機安裝</Link>
+                          </div>
+                        </div>
+                        </a>
+                   
+                      
+                      
+
+                    </div>
+                ))}                              
+            </div>               
         </main>
       <Footer />
 

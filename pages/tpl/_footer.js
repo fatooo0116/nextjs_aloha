@@ -27,11 +27,7 @@ export default function Footer() {
                                 <a href="#">BLOG</a>
                                 </Link>
                         </li>
-                        <li>
-                                <Link href={'/about'} >
-                                <a href="#">ABOUT</a>
-                                </Link>
-                        </li>             
+                 
                         <li>
                                 <Link href={'/services'} >
                                 <a href="#">SERVICE</a>

@@ -30,10 +30,12 @@ function Menu(props) {
                         </Link>  
                         <Link href={'/myblog'} className="is-current">
                             <a><div className="menu-nav-text split-text"><span>B</span><span>L</span><span>O</span><span>G</span></div></a>
-                        </Link>                                                      
+                        </Link>     
+                        {/* }                                                 
                         <Link href="/about/">
                             <a><div className="menu-nav-text split-text"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></div></a>
-                        </Link>                                                       
+                        </Link>
+                        {*/}                                                       
                         <Link href="/services/">
                             <a><div className="menu-nav-text split-text"><span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></div></a>
                         </Link>

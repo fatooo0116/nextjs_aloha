@@ -1424,7 +1424,8 @@ ul.works-pager__list {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0; }
+  top: 0;
+  z-index: 0; }
 
 .circles {
   position: absolute;
@@ -1508,6 +1509,23 @@ ul.works-pager__list {
   height: 150px;
   animation-delay: 0s;
   animation-duration: 11s; }
+
+.contact_form {
+  z-index: 2; }
+  .contact_form textarea {
+    z-index: 3;
+    background: transparent; }
+  .contact_form button[type="submit"] {
+    z-index: 3; }
+
+.w100 {
+  width: 100%;
+  /* border-color: greenyellow; */
+  padding: 10px 10px 15px;
+  border: 1px solid #00ff2b;
+  color: #0cab27;
+  line-height: 1em;
+  margin-bottom: 30px; }
 
 @keyframes animate {
   0% {

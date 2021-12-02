@@ -653,14 +653,14 @@ ul, ol {
   box-sizing: border-box;
   width: 100%; }
   #main_page .main {
-    width: 70%;
+    width: 60%;
     min-height: 2000px;
     padding-right: 50px; }
     #main_page .main .box {
       width: 100%;
       margin-bottom: 50px;
       width: 100%;
-      max-width: 800px;
+      max-width: 600px;
       margin: auto; }
       #main_page .main .box p {
         padding-top: 10px;
@@ -673,7 +673,7 @@ ul, ol {
         height: auto;
         display: block; }
   #main_page .desc {
-    width: 30%; }
+    width: 40%; }
     #main_page .desc .follow {
       position: sticky;
       top: 50px; }

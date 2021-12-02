@@ -81,14 +81,14 @@
     box-sizing: border-box;
     width: 100%;;
     .main{
-        width:70%;
+        width:60%;
         min-height: 2000px;
         padding-right: 50px;;
         .box{
             width:100%;
             margin-bottom: 50px;;
             width: 100%;
-            max-width: 800px;
+            max-width: 600px;
             margin: auto;            
            
             p{
@@ -107,7 +107,7 @@
         }
     }
     .desc{
-        width:30%;
+        width:40%;
         .follow{
             position:sticky;
             top: 50px;

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import Menu from './_menu'
 import Link from 'next/link'
+import Script from 'next/script'
 
 
 class Header extends React.Component{
@@ -62,15 +63,17 @@ class Header extends React.Component{
 
             
             
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157417377-2"></script>
-            <script
-                dangerouslySetInnerHTML={{
-                  __html: `window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());            
-                  gtag('config', 'UA-157417377-2');`
-                }}
-              />
+            <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'GOOGLE_ANALYTICS_ID', 'auto');
+          ga('send', 'pageview');
+        `}
+      </Script>
+      <Script
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+      />
           </Head>
 
           
@@ -99,7 +102,21 @@ class Header extends React.Component{
             </div>   
 
 
+           
+          
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-JFCWMCKP98"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
 
       </div>
     )

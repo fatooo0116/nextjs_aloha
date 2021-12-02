@@ -908,18 +908,6 @@ ul, ol {
   .js-pagetop {
     right: 2px; }
 
-  ul.works-pager__list li a.prev {
-    padding-left: 20px; }
-
-  ul.works-pager__list li a.prev:before {
-    width: 20px; }
-
-  ul.works-pager__list li a.next:before {
-    width: 20px; }
-
-  ul.works-pager__list li a.next {
-    padding-right: 20px; }
-
   #single_post .single_top .top_desc h1 {
     font-size: 40px; }
 
@@ -1079,7 +1067,19 @@ ul.works-pager__list {
     font-size: 15px; } }
 @media (max-width: 600px) {
   .works-pager__list {
-    padding: 0 0px; } }
+    padding: 0 0px; }
+
+  ul.works-pager__list li a.prev {
+    padding-left: 20px; }
+
+  ul.works-pager__list li a.prev:before {
+    width: 20px; }
+
+  ul.works-pager__list li a.next:before {
+    width: 20px; }
+
+  ul.works-pager__list li a.next {
+    padding-right: 20px; } }
 .menuBg {
   z-index: 1;
   background-color: #000;

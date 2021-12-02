@@ -903,7 +903,11 @@ ul, ol {
       align-items: center; } }
 @media (max-width: 450px) {
   #single_post .single_top .top_desc h1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  #main_page .desc {
+    padding: 0 0 0 25px;
+    box-sizing: border-box; } }
 .footer {
   width: 100%;
   height: 100px;

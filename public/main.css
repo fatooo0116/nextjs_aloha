@@ -1070,7 +1070,7 @@ ul.works-pager__list {
     padding: 0 0px; }
 
   ul.works-pager__list li a.prev {
-    padding-left: 20px; }
+    padding-left: 25px; }
 
   ul.works-pager__list li a.prev:before {
     width: 20px; }
@@ -1079,7 +1079,7 @@ ul.works-pager__list {
     width: 20px; }
 
   ul.works-pager__list li a.next {
-    padding-right: 20px; } }
+    padding-right: 25px; } }
 .menuBg {
   z-index: 1;
   background-color: #000;

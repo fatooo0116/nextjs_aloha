@@ -81,7 +81,7 @@ class Header extends React.Component{
             <header>
               <div id="global_logo">
                 <Link href={'/'} className="is-current">
-                  <img src="http://api.aloha-tech.com/wp-content/uploads/2021/06/aloha_logo_2w.svg" />
+                  <img src="https://api.aloha-tech.com/wp-content/uploads/2021/06/aloha_logo_2w.svg" />
                 </Link>
               </div>          
             </header>

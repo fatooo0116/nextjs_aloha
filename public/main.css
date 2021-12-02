@@ -806,8 +806,8 @@ ul, ol {
 .menuBtn {
   width: 25px;
   height: 20px;
-  margin-top: 3.125vw;
-  margin-right: 3.125vw;
+  margin-top: 40px;
+  margin-right: 3.525vw;
   position: fixed;
   top: 0;
   right: 0;
@@ -876,21 +876,35 @@ ul, ol {
     #main_page .desc .follow {
       top: 80px; } }
 @media (max-width: 1024px) {
+  .menuBtn {
+    margin-top: 30px; }
+
   main.page_contents {
     padding-top: 84px; } }
 @media (max-width: 768px) {
+  .js-pagetop {
+    right: 2px; }
+    .js-pagetop .backtop {
+      font-size: 1em; }
+
+  #global_logo {
+    margin-top: 10px; }
+
+  .menuBtn {
+    margin-top: 18px; }
+
   #main_page .main {
     padding-right: 0; }
 
   #aloha_header {
     width: 100%;
-    height: 64px;
+    height: 54px;
     background: #EAEDEA;
     position: fixed;
     z-index: 2; }
 
   main.page_contents {
-    padding-top: 65px; }
+    padding-top: 54px; }
     main.page_contents .works-intro__head {
       font-size: 2rem;
       text-align: center;
@@ -905,9 +919,6 @@ ul, ol {
       justify-content: space-between;
       align-items: center; } }
 @media (max-width: 450px) {
-  .js-pagetop {
-    right: 2px; }
-
   #single_post .single_top .top_desc h1 {
     font-size: 40px; }
 
@@ -1283,8 +1294,8 @@ ul.works-pager__list {
       transition: 0.5s transform cubic-bezier(0.1, 0.2, 0.3, 1), 0.35s opacity cubic-bezier(0.1, 0.2, 0.3, 1), 0.5s -webkit-transform cubic-bezier(0.1, 0.2, 0.3, 1); }
 
 .menu-closeBtn {
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 20px;
+  height: 20px;
   margin-top: 3.125vw;
   margin-right: 3.125vw; }
 

@@ -28,11 +28,27 @@ export default function workFooter() {
             <div  className="contactme ft-con__inner ">                
                 <div className="" >
                     <ul className="footer_menu">
-                        <li><a href="#">COMPANY</a></li>
-                        <li><a href="#">SERVICE</a></li>
-                        <li><a href="#">WORKS</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                    <li>
+                                <Link href={'/'} className="is-current">
+                                <a href="#">HOME</a>
+                                </Link>
+                        </li>                        
+                        <li>
+                                <Link href={'/myblog'} >
+                                <a href="#">BLOG</a>
+                                </Link>
+                        </li>
+                 
+                        <li>
+                                <Link href={'/services'} >
+                                <a href="#">SERVICE</a>
+                                </Link>
+                        </li>                                      
+                        <li>
+                                <Link href={'/contact'} >
+                                <a href="#">CONTACT</a>
+                                </Link>
+                        </li> 
                     </ul>
                 </div>
                 <small>©Aloha-tech, Inc.</small>   

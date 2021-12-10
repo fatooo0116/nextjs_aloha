@@ -40,7 +40,7 @@ export default function Home(props) {
               <div className="works-intro__txt-wrap txtWrap">
                 <h1 id="home_bn1" className="works-intro__head tit c-head01 u-poppins">works</h1>
                 <h3 className="aloha_small_title">我們擁有20多年，網站設計，程式設計，網站建置，網站SEO的經驗，技術隨著時間與接手案子不斷累積，與時俱進，
-                  進而協助我們的客戶，解決棘手的難題，簡化複雜的流程或達到理想的業績目標。                  
+                  進而協助我們的客戶，解決棘手的難題，簡化複雜的流程或提升至理想的業績目標。                  
                 </h3>
                 {/* 
                 <ul className="works-intro__tab tab">

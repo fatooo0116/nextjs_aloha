@@ -34,7 +34,6 @@ export default function Home(props) {
 
 
         <main className="page_contents">
-
           <div id="intro" className="works-intro">
             <div className="works-intro__inner u-inner">
               <div className="works-intro__txt-wrap txtWrap">

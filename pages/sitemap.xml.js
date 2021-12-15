@@ -4,18 +4,22 @@ export const getServerSideProps = async (ctx) => {
     {
         loc: 'https://aloha-tech.com', // Absolute url
         lastmod: new Date().toISOString(),
+        priority:0.80
     },
     {
       loc: 'https://aloha-tech.com/myblog', // Absolute url
       lastmod: new Date().toISOString(),
+      priority:0.80
     },
     {
       loc: 'https://aloha-tech.com/services', // Absolute url
       lastmod: new Date().toISOString(),
+      priority:0.80
     },
     {
         loc: 'https://aloha-tech.com/contact', // Absolute url
         lastmod: new Date().toISOString(),
+        priority:0.80
       },
   ]
 
@@ -37,6 +41,7 @@ export const getServerSideProps = async (ctx) => {
        fields.push({
         loc: encodeURI('https://aloha-tech.com/works/'+item.title), // Absolute url
         lastmod: new Date().toISOString(),
+        priority:0.80
        });
    });
 
@@ -63,6 +68,7 @@ export const getServerSideProps = async (ctx) => {
      fields.push({
       loc: encodeURI('https://aloha-tech.com/blogs/'+item.title), // Absolute url
       lastmod: new Date().toISOString(),
+      priority:0.80
      });
     });
 
@@ -70,3 +76,7 @@ export const getServerSideProps = async (ctx) => {
   return getServerSideSitemap(ctx, fields)
 }
 export default () => {};
+
+
+
+

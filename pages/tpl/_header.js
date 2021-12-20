@@ -50,7 +50,7 @@ class Header extends React.Component{
         <div id="aloha_header"   className={(this.state.menuCloseAni)? "closing":"" }>
         
           <Head>
-            <title>Aloha Tech Software | 軟體設計 | 網頁設計 | APP建置 </title>
+            <title>{(this.props.title)? this.props.title+" | " : ""} Aloha Tech Software | 軟體設計 | 網頁設計 | APP建置  </title>
 
             <meta name="description" content="幫助各個企業主加速商品銷售，不論公司規模大小，我們提供各種銷售利器，讓您的訊息能迅速傳播，掌握各種商機，結合最新銷售管道像是 Line App ，FB行銷，線上直播等等，我們也能客制各種軟體ERP ,ios app android app wordpress, 各種API串接開發，簡化貴公司的事務處理流程，或者是優化網站加強SEO" />
             <meta name="keywords" content="軟體設計,網頁設計,APP建置,台北網頁設計,台北網頁推薦,web develope,website developement, ios app,flutter," />

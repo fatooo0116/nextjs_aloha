@@ -15,7 +15,7 @@ export default function BlogId(props) {
 
   return (
     <div className={styles.container}>
-      <Header />
+      <Header  title={props.detail.title} />
       <main className="page_contents">    
           <div id="single_blog" >
             <div className="single_top" >

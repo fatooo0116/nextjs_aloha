@@ -24,7 +24,7 @@ export default function WorkId(props) {
   return (
     <div className={styles.container}>
 
-      <Header />      
+      <Header  title={props.detail.title} />
       <main className={main_style}>    
           <div id="single_post" >
             <div className="single_top"   >

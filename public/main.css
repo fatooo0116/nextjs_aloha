@@ -803,6 +803,9 @@ ul, ol {
     #global_logo a img {
       width: 100%; }
 
+.dark #single_post .single_top .top_desc h1 {
+  color: #333 !important; }
+
 /*   */
 .menuBtn {
   width: 25px;

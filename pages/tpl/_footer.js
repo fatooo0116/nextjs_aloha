@@ -21,7 +21,8 @@ export default function Footer() {
                                 <Link href={'/'} className="is-current">
                                 <a href="#">HOME</a>
                                 </Link>
-                        </li>                        
+                        </li>   
+                                             
                         <li>
                                 <Link href={'/myblog'} >
                                 <a href="#">BLOG</a>

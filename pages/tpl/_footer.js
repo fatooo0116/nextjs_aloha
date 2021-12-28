@@ -22,6 +22,7 @@ export default function Footer() {
                                 <a href="#">HOME</a>
                                 </Link>
                         </li>   
+                              
                                              
                         <li>
                                 <Link href={'/myblog'} >

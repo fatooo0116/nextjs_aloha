@@ -33,8 +33,8 @@ export default function MyBlog(props) {
                       
                       <Link href={`/blogs/${post.title}`}title="台北網頁設計 | website design">
 
-                      </Link>
-                        <a href={`/blogs/${post.title}`}  >
+                      
+                
                         <div className="pimg"><Link href={`/blogs/${post.title}`} >{(post.img)? <img src={post.img} />: '' }</Link></div>
                         <div className="rtext">
                           <h3 className="b_title"><Link href={`/blogs/${post.title}`} >{post.title}</Link></h3>
@@ -43,7 +43,7 @@ export default function MyBlog(props) {
                             <Link href={`/blogs/${post.title}`}>#主機安裝</Link>
                           </div>
                         </div>
-                        </a>
+                        </Link>
                    
                       
                       

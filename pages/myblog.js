@@ -31,7 +31,7 @@ export default function MyBlog(props) {
                 {props.allPosts.data.map((post , key) => (
                     <div className="box" key={key} >
                       
-                        <a href={`/blogs/${post.title}`}>
+                        <a href={`/blogs/${post.title}`}  >
                         <div className="pimg"><Link href={`/blogs/${post.title}`} >{(post.img)? <img src={post.img} />: '' }</Link></div>
                         <div className="rtext">
                           <h3 className="b_title"><Link href={`/blogs/${post.title}`} >{post.title}</Link></h3>

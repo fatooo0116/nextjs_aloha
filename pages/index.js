@@ -59,7 +59,7 @@ export default function Home(props) {
                 {props.allPosts.data.map((post , key) => (
                     <li  className="works-archive__item" key={post.id} >
                       <Link href={`/works/${post.title}`}>
-                          <a hre={`/works/${post.title}`} >
+                          <a href={`/works/${post.title}`} >
                             <div className="works-archive__img-wrap">
                                 <div className="works-archive__img" style={{"backgroundImage": (post.img)? "url("+post.img+")":"url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)" }}></div>
                             </div>

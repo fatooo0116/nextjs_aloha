@@ -59,6 +59,7 @@ export default function Home(props) {
                 {props.allPosts.data.map((post , key) => (
                     <li  className="works-archive__item" key={post.id} >
                       <Link href={`/works/${post.title}`} title="台北網頁設計 | website design">
+                        <a>
                          
                             <div className="works-archive__img-wrap">
                                 <div className="works-archive__img" style={{"backgroundImage": (post.img)? "url("+post.img+")":"url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)" }}></div>
@@ -66,7 +67,7 @@ export default function Home(props) {
                             <div className="works-archive__area-txt">
                                 <p className="works-archive__head u-poppins">{post.title}</p>
                             </div>                                               
-                          
+                         </a> 
                         </Link>
                     </li>
                 ))}                

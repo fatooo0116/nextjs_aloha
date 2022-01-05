@@ -31,8 +31,7 @@ export default function MyBlog(props) {
                 {props.allPosts.data.map((post , key) => (
                     <div className="box" key={key} >
                       
-                      <Link href={`/blogs/${post.title}`}title="台北網頁設計 | website design">
-
+                    
                       
                 
                         <div className="pimg"><Link href={`/blogs/${post.title}`} >{(post.img)? <img src={post.img} />: '' }</Link></div>
@@ -43,7 +42,7 @@ export default function MyBlog(props) {
                             <Link href={`/blogs/${post.title}`}>#主機安裝</Link>
                           </div>
                         </div>
-                        </Link>
+                   
                    
                       
                       

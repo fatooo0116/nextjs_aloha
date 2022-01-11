@@ -1,0 +1,36 @@
+
+.blog_outter{
+    .box{
+        display: flex;
+        margin-bottom: 20px;
+        /* border-bottom: 1px solid #dfdfdf; */
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        .pimg{
+            width: 180px;;
+            margin-right: 20px;;
+        }
+        .rtext{
+            h3 a{
+                font-size: 23px;;
+                font-weight:bold;
+            }
+            .b_meta{
+                font-weight: 300;
+                font-size: 16px;
+                margin-bottom: 5px;;
+            }
+            .b_tag a{
+                
+                font-size: 16px;;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .blog_outter .box .pimg{
+        display: none;
+    }
+}

@@ -124,3 +124,14 @@
 
     }
 }
+
+
+@media (max-width: 450px){
+    #single_blog{
+        padding:50px 20px;
+    }
+    #single_blog .single_top h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+}

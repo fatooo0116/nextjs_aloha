@@ -12,7 +12,7 @@
         }
         .rtext{
             h3 a{
-                font-size: 23px;;
+                font-size: 40px;;
                 font-weight:bold;
             }
             .b_meta{
@@ -29,7 +29,12 @@
 }
 
 
+
 @media (max-width: 768px){
+    .blog_outter .box .rtext h3 a{
+        font-size: 23px;;
+    }
+    
     .blog_outter .box .pimg{
         display: none;
     }

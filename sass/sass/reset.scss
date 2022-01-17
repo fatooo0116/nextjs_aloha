@@ -572,6 +572,8 @@ ul, ol {
   line-height: 1;
   text-transform: uppercase;
 }
+
+
 .c-head01 {
     font-size: 4rem;
     font-weight: 700;
@@ -599,6 +601,18 @@ ul, ol {
   letter-spacing: 0;
   font-weight: 600;
 }
+
+
+#breadcrumbs.center{
+  bottom: auto;  
+  left: auto ! important;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
 
 @media (min-width: 1024px){
   .u-inner {
@@ -631,6 +645,7 @@ ul, ol {
 
 @media (min-width: 600px){
   .c-head01 {
-      font-size: 8rem;
+      font-size: 5rem;
+      margin-bottom: 20px;
   }
 }

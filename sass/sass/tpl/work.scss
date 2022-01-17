@@ -59,6 +59,15 @@
     }
 }
 
+#breadcrumbs{
+    position: absolute;
+    bottom: 0;
+    left: 55px;
+    bottom: 15px;
+    font-size: 13px;
+    color: #99A;
+}
+
 
 
 @media (min-width: 1024px){
@@ -83,10 +92,15 @@
     }
 }
 
-
+@media (max-width: 450px){
+    #breadcrumbs{
+        left: 15px;
+    }
+}
 
 
 @media (min-width: 600px){
+
     .works-archive__item:nth-child(n) {
         margin-right: 0;
     }

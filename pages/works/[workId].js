@@ -35,12 +35,16 @@ export default function WorkId(props) {
                 <div class="box">
                   <h1>{router.query.workId}</h1>
                 </div>
+                  <div id="breadcrumbs">
+                    <a href="/">Work</a>  » <a hr>{router.query.workId}</a>
+                  </div>
               </div>
              
             </div>
 
             <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />              
           </div>
+
       </main>
       <Footer />
 

@@ -29,6 +29,11 @@ export default function Contact(props) {
               </div>
             </div>
 
+
+            <div id="breadcrumbs" className="center">
+                    <a href="/">Home</a>  » <a >Contact</a>
+            </div>            
+
            <div class="c_banner">
             <img src="https://api.aloha-tech.com/wp-content/uploads/2021/11/145-scaled.jpg" />
            </div>

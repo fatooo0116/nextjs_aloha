@@ -28,7 +28,7 @@ export default function Home(props) {
   
 
   return (
-   <div id="outter">
+   <div id="outter" className="home">
 
       <Header />  
 
@@ -37,7 +37,9 @@ export default function Home(props) {
           <div id="intro" className="works-intro">
             <div className="works-intro__inner u-inner">
               <div className="works-intro__txt-wrap txtWrap">
-                <h1 id="home_bn1" className="works-intro__head tit c-head01 u-poppins">works</h1>
+
+                <h1 id="home_bn1" className="works-intro__head tit c-head01 u-poppins">網站程式最佳合作夥伴</h1>
+              
                 <h3 className="aloha_small_title">我們擁有20多年，網站設計，程式設計，網站建置，網站SEO的經驗，技術隨著時間與接手案子不斷累積，與時俱進，
                   進而協助我們的客戶，解決棘手的難題，簡化複雜的流程或提升至理想的業績目標。                  
                 </h3>
@@ -52,17 +54,24 @@ export default function Home(props) {
               </div>
             </div>
           </div>
+
+          <h2 class="main_title">
+                <span class="sub">Work</span>我們的客戶
+          </h2>
+          <br/><br/>
+          
           
           <div id="archive" >
             <div className="_innerbox  u-inner" >
               <ul className="works-archive-list">            
                 {props.allPosts.data.map((post , key) => (
                     <li  className="works-archive__item" key={post.id} >
-                      <Link href={`/works/${post.title}`} title="台北網頁設計 | website design">
-                        <a>
+                      <Link href={`/works/${post.title}`} >
+                        <a title={post.title+"| aloha-tech | 台北網頁設計"}>
                          
                             <div className="works-archive__img-wrap">
                                 <div className="works-archive__img" style={{"backgroundImage": (post.img)? "url("+post.img+")":"url(https://www.m-hand.co.jp/wp/wp-content/uploads/2021/01/eb907077085c777126270a7f324c87f4.jpg)" }}></div>
+                                <img src={post.img} alt={post.title+"| aloha-tech | 台北網頁設計"} style={{'display':'none'}} />
                             </div>
                             <div className="works-archive__area-txt">
                                 <p className="works-archive__head u-poppins">{post.title}</p>

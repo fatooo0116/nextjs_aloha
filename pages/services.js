@@ -25,7 +25,11 @@ export default function Home(props) {
               <p class="tsub mx800">
                 幫助各個企業主加速商品銷售，不論公司規模大小，我們提供各種銷售利器，讓您的訊息能迅速傳播，掌握各種商機，結合最新銷售管道像是 Line App ，FB行銷，線上直播等等，我們也能客制各種軟體ERP, 各種API串接開發，簡化貴公司的事務處理流程，或者是優化網站加強SEO
               </p>
-               
+
+
+            <div id="breadcrumbs" className="center">
+                    <a href="/">Home</a>  » <a >Services</a>
+            </div>
 
               <div class="inner">
                 

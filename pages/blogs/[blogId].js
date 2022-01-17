@@ -22,7 +22,7 @@ export default function BlogId(props) {
               <h1>{props.detail.title}</h1>
             
 
-             <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />                
+              <div className="desc"  dangerouslySetInnerHTML={{ __html: props.detail.content }} />                
 
      
             </div>
